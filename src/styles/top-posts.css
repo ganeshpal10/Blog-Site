@@ -1,0 +1,138 @@
+.top-posts-container{
+    width: 100%;
+    height: 54.5rem;
+}
+
+.top-posts-item .item1{
+    width: 100%;
+    height: auto;
+    margin-top: -2rem;
+    margin-bottom: 1.7rem;
+}
+
+
+.top-posts-item .item1 img{
+    width: 100%;
+    height: 15rem;
+    
+    box-shadow: 0px 5px 10px #0000000D;
+    border-radius: 3px;
+}
+
+.post-item-description1{
+    font-family: Montserrat;
+    white-space: normal;
+    display: flex;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin: 0.8rem 0;
+}
+
+.post-item-description1 .post-item-title1{
+    font-size: 1.38rem;
+    margin: 0;
+    font-weight: 600;
+    width: 80%;
+}
+
+.post-item-description1 .post-number1{
+    font-family:fira Sans;
+    margin: 0;
+    font-size: 3.1rem;
+    letter-spacing: 1.48px;
+    color: #9b9898;
+    opacity: 0.3;
+}
+
+.post-item-description1 .para-category{
+    font-size: 15px;
+}
+
+
+
+.top-posts-item .item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid #f0f0f0;
+    padding:0.8rem 0 0.4rem;
+}
+
+
+
+.item .post-item-description{
+    width: 100%;
+}
+
+.top-posts-item .item img{
+    width: 29%;
+    height: 5.7rem;
+    box-shadow: 0px 5px 10px #0000000D;
+    border-radius: 2px;
+}
+.post-item-description-container{
+    width: 65%;
+    margin: 0;
+}
+.post-item-description{
+    font-family: Montserrat;
+    white-space: normal;
+    display: flex;   
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin: 0;
+}
+
+.post-item-description .post-item-title{
+    width: 80%;
+    margin: 0;
+    font-weight: 600;
+}
+
+.post-item-description .post-number{
+    font-family:fira Sans;
+    margin: 0;
+    font-size: 2.9rem;
+    letter-spacing: 1.48px;
+    color: #9b9898;
+    opacity: 0.3;
+}
+
+@media screen and (max-width:1000px) {
+    .top-posts-item .item1 img{
+        
+        height: 13rem;
+    }
+       
+}
+
+
+@media screen and (max-width:980px) {
+    .post-item-description1 .post-item-title1{
+        font-size: 1.38rem;
+    }
+    .post-item-description .post-item-title{
+        font-size: 0.9rem;
+    }
+    .top-posts-item .item img {
+        height: 4.7rem;
+    }
+    .post-item-description .post-number {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .post-item-description1 .post-item-title1{
+        font-size: 1.18rem;
+    }
+    .post-item-description .post-item-title{
+        font-size: 0.7rem;
+    }
+    .post-date .para-category{
+        font-size: 12px;
+    }
+}

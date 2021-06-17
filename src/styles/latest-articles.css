@@ -1,0 +1,63 @@
+.latest-articles-container{
+    margin-bottom: 1rem;
+}
+.latest-articles-main-contianer{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    height: auto;
+}
+
+.display-image{
+    width: 100%;
+    height: auto;
+    margin-top: 4.1rem;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.display-image img{
+    width: 100%;
+    height: 26rem;
+    box-shadow: 0px 5px 10px #0000000D;
+    border-radius: 3px;
+}
+
+.display-title{
+    font-family: Montserrat;
+    color: white;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+    text-align: center;
+
+}
+
+.display-text{
+    margin-bottom: 4rem;
+}
+.display-title .para-category{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.display-title .para-date{
+    color: #FFFFFF;;
+    opacity: 0.9;
+    
+}
+
+@media screen and (max-width:1000px)
+{
+    .display-title{
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .display-image img{
+        height: 24rem;
+    }
+
+    .display-title{
+        right: 10%;
+    }
+}

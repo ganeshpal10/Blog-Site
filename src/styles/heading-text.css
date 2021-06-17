@@ -1,0 +1,21 @@
+.latest-heading-text{
+    margin-bottom: 3rem;
+    font-family: Montserrat;
+}
+
+.latest-heading-text p{
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+
+.latest-heading-text hr{
+    margin: 0;
+    height: 0.14rem;
+    width: 4.2rem;
+    border-radius: 10px;
+    border-width: 0;
+    background-color:#F08080;
+}

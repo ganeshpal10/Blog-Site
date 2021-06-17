@@ -1,0 +1,21 @@
+.load-more{
+    font-family: sans-serif;
+    height: 1rem;
+    display: flex;
+    align-content: center;
+    color: #A2A2A2;
+    font-size: 13px;
+    margin-bottom: 3rem;
+    text-decoration: none;
+}
+
+.load-more img{
+    height: 100%;
+    margin: 0 1em;
+}
+a{
+    text-decoration: none;
+}
+.Smallright span{
+    font-size: 0.95rem;
+}

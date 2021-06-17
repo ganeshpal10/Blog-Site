@@ -1,0 +1,118 @@
+.featured-conatiner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 34% 34% 30%;
+    margin-top: 3em;
+    grid-column-gap: 15px;
+    grid-row-gap:20px ;
+    height: auto;
+}
+
+
+.featured-item{
+    position: relative;
+    box-shadow: 0px 5px 10px #0000001A;
+    height: 169px;
+    color: #f0f0f0;
+    font-family: Montserrat;
+    height: auto;
+}
+
+.featured-item img{
+   width: 100%;
+   height: 100%; 
+   border-radius: 8px;
+}
+
+.featured-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+}
+
+
+.featured-item .title-contianer{
+    position: absolute;
+    top: 55%;
+    left: 7%;
+}
+
+.featured-item1 .title-contianer .title{
+    
+    font-size: 31px;
+    font-weight: 500;
+
+}
+.date{
+    color: #FCFCFC;
+    opacity: 0.57;
+    font-weight: 400;
+}
+
+
+
+.featured-item1 .title-contianer .date{
+    color: #FCFCFC;
+    font-size: 14px;
+    opacity: 0.57;
+}
+
+
+
+.featured-item .title-contianer2,.title-contianer3{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    white-space: pre-wrap;
+}
+.featured-item .title-contianer2 .title,.title-contianer3 .title{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.featured-item .title-contianer2 .date,.title-contianer3 .date{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+
+
+@media screen and (max-width:1125px) {
+    
+    .featured-item1 .title-contianer .title{
+    
+        font-size: 25px;
+    }
+    
+    .featured-item .title-contianer2 .title,.title-contianer3 .title{
+        top: 25%;
+        font-size: 1.2rem;
+    }
+    .featured-item .title-contianer2 .date,.title-contianer3 .date{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:999px) {
+
+    .featured-conatiner{
+        grid-template-columns: 28% 30% 37%;
+    }
+    
+}
+
+@media screen and (max-width:814px){
+    .featured-conatiner{
+        grid-template-columns: 25% 30% 39%;
+    }
+
+    .featured-item .title-contianer{
+        top: 50%;
+    }
+}
+

@@ -1,0 +1,58 @@
+.latest-stories-contianer{
+    margin-bottom: 2rem;
+    white-space: normal;
+    font-family: Montserrat;
+}
+.latest-stories-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border-top: 3.5px solid #f0f0f0;
+    border-bottom: 3.5px solid #f0f0f0;
+    padding: 2.5rem 0 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.latest-stories-item{
+    width: 31%;
+    padding:0 2rem;
+    border-right:3.5px solid #f0f0f0;
+}
+.latest-stories-item.last{
+    border-right: 0;
+}
+.latest-stories-item .story-heading{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+.latest-stories-item .story-para{
+    word-break: break-all;
+    white-space: normal;
+    font-size: 17px;
+    margin: 3rem 0 3rem;
+}
+
+
+@media screen and (max-width:1090px){
+    .latest-stories-item .story-heading{
+        font-size: 1.7rem;
+    }
+    .latest-stories-item .story-para{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:950px) {
+    .latest-stories-item .story-heading{
+        font-size: 1.4rem;
+    }
+    .latest-stories-item .story-para{
+        font-size: 0.8rem;
+    }
+}
+@media  screen and (min-width:720px) and (max-width:850px) {
+    .latest-stories-item .story-heading {
+        font-size: 1.3rem;
+    }
+}

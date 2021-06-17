@@ -1,0 +1,38 @@
+.side-contianer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.ad{
+    border: 1px solid #858484;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 46rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+
+
+@media screen and (max-width:960px) {
+    
+    .ad{
+        font-size: 1.4em;
+        height: 44rem;
+    }
+}
+
+@media screen and (max-width:830px){
+    .ad{
+        font-size: 1.2em;
+        height: 42rem;
+    }
+}

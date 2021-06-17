@@ -1,0 +1,30 @@
+.headingContainer{
+    width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+.menu-items{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+    justify-content: space-evenly;
+    
+}
+
+.menu-items li{
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.menu{
+    border-bottom: 3px solid #F0F0F0;
+    border-width: 0.2em;
+}
