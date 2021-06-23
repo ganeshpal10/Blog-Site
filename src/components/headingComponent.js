@@ -2,6 +2,9 @@ import React from 'react';
 import './../styles/heading.css';
 import Siren from './siren';
 
+
+
+
 const Heading = () =>{
     let menuItem = [
         {
@@ -29,18 +32,39 @@ const Heading = () =>{
             item:"Food"
         },
     ]
+
+    const openMenu=()=>{
+        let a = document.getElementById("Menu");
+        
+        if(a.className==="menu")
+        {
+            a.className += " responsive"
+                        
+        }
+        else{
+            a.className = "menu";
+        }
+        
+    }
     return(
         <>
             <div className = "headingContainer">
-                <Siren />
-                <div className = "menu">
-                    <ul className = "menu-items">
-                        {
-                            menuItem.map((element)=>{
-                               return(<li key={element.id}>{element.item}</li>)
-                            })
-                        }
-                    </ul>
+                <div className ="mobile-heading-container">
+                    <Siren />
+                    <div className="menu-icon">
+                        <i className="fa fa-bars" onClick={openMenu}></i>
+                    </div>
+                </div>
+                <div className="menu-container">
+                    <div className = "menu"  id="Menu">
+                        <ul className = "menu-items">
+                            {
+                                menuItem.map((element)=>{
+                                   return(<li key={element.id}>{element.item}</li>)
+                                })
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

@@ -1,0 +1,11 @@
+.icon-container{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.icon-container i{
+    
+    margin-right: 4px;
+    color:rgba(116, 115, 115, 0.507);
+    font-size: 1.4rem;
+    
+}

@@ -1,0 +1,21 @@
+
+.clap-fixed-container .share-container img{
+    width: 27px;
+    height: 28px;
+    margin-right: 1rem;
+}
+.clap-fixed-container .share-container p{
+    margin-top: 7px;
+}
+.clap-fixed-container .share-container p{
+    
+    font-family: Open Sans;
+    color: #939393;
+    font-size: 0.9rem;
+    letter-spacing: 0.1px;
+}
+
+.clap-fixed-container .share-container{
+    width: 11rem;
+    display: flex;
+}

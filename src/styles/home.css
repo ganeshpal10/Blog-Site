@@ -2,4 +2,15 @@
     width: 80%;
     height: 100%;
     margin: auto;
+    padding-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:710px) {
+    
+    .home{
+        width: 100%;
+        margin: 0;
+    }
 }

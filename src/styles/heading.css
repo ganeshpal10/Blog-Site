@@ -4,8 +4,9 @@
     margin-bottom: 3rem;
 }
 
-
-
+.menu-icon{
+    display: none;
+}
 
 
 
@@ -27,4 +28,66 @@
 .menu{
     border-bottom: 3px solid #F0F0F0;
     border-width: 0.2em;
+}
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .headingContainer{
+        width: 100%;
+        margin: 0;
+        border-bottom: 4px solid rgba(128, 128, 128, 0.342);
+        box-shadow: 0px 3px 6px #00000029;
+    }
+    
+    .mobile-heading-container{
+        display: flex;
+        justify-content: space-between;
+        padding:1rem
+    }
+
+    .mobile-heading-container .menu-icon{
+        color: rgb(146, 145, 145);
+        width:30px
+    }
+    .menu{
+        border-bottom: none;
+        display: none;
+    }
+
+
+    .menu.responsive{
+        display: block;
+    }
+    .responsive .menu-items{
+        display: block;
+    }
+
+
+    
+    .menu-items{
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+    .menu-items li:first-of-type{
+        border-top: 2px solid #f0f0f0da;
+    }
+    .menu-items li{
+
+        border-bottom: 2px solid #f0f0f0da;
+        border-width: 0.1em;
+        padding: 0.4rem 0; 
+    }
+    .menu-items li:last-of-type{
+
+        border: none;
+    }
+
+    .menu-icon{
+
+        display: block;
+        font-size: 25px;
+    }
 }

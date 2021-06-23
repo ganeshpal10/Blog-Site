@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100%;
     margin: 0;
+    text-align: justify;
 }
 .articles-item{
     font-family: Montserrat;
@@ -20,7 +21,7 @@
 }
 
 .article-image-container1{
-    width: 17em;
+    width: 20em;
     height: 14em;
     text-align: center;
     margin-right:1rem;
@@ -102,5 +103,28 @@
 @media screen and (max-width:850px) {
     .articles-description .article-title1{
         font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .article-image-container1{
+      width: 20em;   
+      height: 8em;
+      margin-left: 0;
+    }
+    .article-image-container{
+        width: 20em;
+        height: 8em;
+      margin-left: 0;
+    }
+    .articles-description .article-title1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    .articles-description .article-title{
+        font-size: 1rem;
+        font-weight: 500;
     }
 }

@@ -11,8 +11,8 @@ const MainCategory =()=>{
         {
             id:'1',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -20,8 +20,8 @@ const MainCategory =()=>{
         {
             id:'2',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -29,8 +29,8 @@ const MainCategory =()=>{
         {
             id:'3',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -38,8 +38,8 @@ const MainCategory =()=>{
         {
             id:'4',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -47,8 +47,8 @@ const MainCategory =()=>{
         {
             id:'5',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -56,8 +56,8 @@ const MainCategory =()=>{
         {
             id:'6',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -65,8 +65,8 @@ const MainCategory =()=>{
         {
             id:'7',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+            title:`Catch waves with an adventure guide`,
+            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
             category:"Travel",
             date:" / August 21 2017"
     
@@ -76,7 +76,7 @@ const MainCategory =()=>{
         {
             id:'1',
             image:`${TopPostsImage}`,
-            title:`Catch waves with \n an adventure guide`,
+            title:`Catch waves with an adventure guide`,
             category:"Travel",
             date:" / August 21 2017"
     
@@ -84,7 +84,7 @@ const MainCategory =()=>{
         {
             id:'2',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
+            title:`Catch waves with an adventure guide`,
             category:"Travel",
             date:" / August 21 2017"
     
@@ -92,7 +92,7 @@ const MainCategory =()=>{
         {
             id:'3',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
+            title:`Catch waves with an adventure guide`,
             category:"Travel",
             date:" / August 21 2017"
     
@@ -100,7 +100,7 @@ const MainCategory =()=>{
         {
             id:'4',
             image:`${Articleimage}`,
-            title:`Catch waves with \n an adventure guide`,
+            title:`Catch waves with an adventure guide`,
             category:"Travel",
             date:" / August 21 2017"
     
@@ -111,9 +111,10 @@ const MainCategory =()=>{
             <div className="category-container">
                 <HeadingText  heading={"Bollywood"}/>
                 <ArticleList mainCategory={"Bollywood"} ArticleArray={ArticleArray}/>
+                <LoadButton button={"Bigdown"} text={"Load More"} />
             </div>
             <SideContianer mainCategory={"Bollywood"} TopArray={TopArray}/>
-            <LoadButton button={"Bigdown"} text={"Load More"} />
+            
         </div>
     )
 }

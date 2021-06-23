@@ -2,6 +2,11 @@
     width: 100%;
     height: 100%;
 }
+.article-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
 .article-heading-container{
     border-bottom: 4px solid rgba(128, 128, 128, 0.342);
     box-shadow: 0px 3px 6px #00000029;
@@ -42,4 +47,26 @@
     background-color: #03a87ce1;
     color:white;
 
+}
+
+.article-container .clap-fixed-container{
+    position: fixed;
+    top: 340px;
+    left: 110px;
+}
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .article-heading-container{
+        padding: 0.7rem;
+    }
+    .article-heading-container .theSirenContainer {
+        width:39%
+    }
+
+    .clap-fixed-container{
+        display: none;
+
+    }
+
+    
 }

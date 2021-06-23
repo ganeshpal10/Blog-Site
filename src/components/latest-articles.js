@@ -13,8 +13,8 @@ let ArticleArray = [
     {
         id:'1',
         image:`${Articleimage}`,
-        title:`Catch waves with \n an adventure guide`,
-        description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+        title:`Catch waves with an adventure guide`,
+        description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
         category:"Travel",
         date:" / August 21 2017"
 
@@ -22,8 +22,8 @@ let ArticleArray = [
     {
         id:'2',
         image:`${Articleimage}`,
-        title:`Catch waves with \n an adventure guide`,
-        description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+        title:`Catch waves with an adventure guide`,
+        description:"Gujarat is vastly underrated and it's a  mystery to us why the region isn't more well-",
         category:"Travel",
         date:" / August 21 2017"
 
@@ -31,8 +31,8 @@ let ArticleArray = [
     {
         id:'3',
         image:`${Articleimage}`,
-        title:`Catch waves with \n an adventure guide`,
-        description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+        title:`Catch waves with an adventure guide`,
+        description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
         category:"Travel",
         date:" / August 21 2017"
 
@@ -40,8 +40,8 @@ let ArticleArray = [
     {
         id:'4',
         image:`${Articleimage}`,
-        title:`Catch waves with \n an adventure guide`,
-        description:"Gujarat is vastly underrated and it's a \nmystery to us why the region isn't more well-",
+        title:`Catch waves with an adventure guide`,
+        description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
         category:"Travel",
         date:" / August 21 2017"
 

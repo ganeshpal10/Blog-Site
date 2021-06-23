@@ -61,3 +61,42 @@
         right: 10%;
     }
 }
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .latest-articles-container{
+        width: 89%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .latest-articles-main-contianer{
+        display: block;
+    }
+    .small-para.description1{
+        font-size: 12px;
+        margin-bottom: 14px;
+        overflow: hidden;
+        max-height:45px;
+        text-overflow: ellipsis;
+    }
+    .small-para.description{
+        font-size: 12px;
+        margin-bottom: 14px;
+        overflow: hidden;
+        max-height: 45px;
+        text-overflow: ellipsis;
+    }
+    .articles-list .load-more{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .articles-list .load-more img{
+        transform: rotate(270deg);
+    }
+    .display-image{
+        display: none;
+    }
+    .ad{
+        display: none;
+    }
+}

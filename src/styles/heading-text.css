@@ -19,3 +19,10 @@
     border-width: 0;
     background-color:#F08080;
 }
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .latest-heading-text p{
+        font-size: 1.6em;
+    }
+}

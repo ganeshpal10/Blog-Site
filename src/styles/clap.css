@@ -1,0 +1,18 @@
+.clap-container{
+    width: 11rem;
+    display: flex;
+}
+
+
+.clap-container img{
+    width: 35px;
+    height: 34px;
+    margin-right: 1rem;
+}
+.clap-container p{
+    
+    font-family: Open Sans;
+    color: #939393;
+    font-size: 0.9rem;
+    letter-spacing: 0.1px;
+}

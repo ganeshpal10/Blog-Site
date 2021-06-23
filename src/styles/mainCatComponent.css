@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 65% 35%;
     height: auto;
+    text-align: justify;
 }
 .category-container{
     width: 100%;
@@ -9,12 +10,32 @@
 
 
 .category-container .articles-item:last-of-type{
-    padding: 2rem 0 0;
+    padding: 2rem 0 4rem;
 }
+
+
 
 @media screen and (min-width:890px) and (max-width:1210px){
     .main-category-container .side-contianer .top-posts-container{
         height: 60rem;
+        text-align: initial;
     }    
 }
 
+@media screen and (min-width:320px) and (max-width:720px) {
+    .main-category-container{
+        display: block;
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .category-container{
+        margin-bottom: 2rem;
+    }
+    .category-container .articles-item:last-of-type{
+        padding-bottom: 3rem;
+    }
+    .category-container .load-more{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+}

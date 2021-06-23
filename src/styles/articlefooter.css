@@ -1,0 +1,130 @@
+.article-footer{
+    margin-top: 12px;
+    width: 100%;
+    position: absolute;
+    background-color: #F0F0F0;
+}
+.related-main-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.related-container{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.related-main-container .more{
+    font-family: Open Sans;
+    margin: 3.7rem 0 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+
+.related-tag{
+    color: #A2A2A2;
+    font-family: Open Sans;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.related-container .related-item{
+    width: 30%;
+}
+
+
+
+.related-container .related-item .related-image{
+    width: 100%;
+    box-shadow: 0px 5px 10px #0000000D;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.line{
+    border: none; 
+    background-color:  #F0F0F0;
+    width: 100%;
+    height: 3px;
+}
+.line-related{
+    border: none;
+    background-color: #817a7a4f;
+    width: 100%;
+    height: 2px;
+}
+
+
+
+.related-article-heading{
+    font-family: Montserrat;
+    font-size: 23px;
+    white-space: pre-wrap;
+    font-weight: 600;
+    color: #404040;
+    opacity: 0.9;
+    white-space: pre-wrap;
+}
+
+.related-item .profile-details{
+    margin-bottom: 3rem;
+}
+
+.related-item .profile-details img {
+    height: 4.7rem;
+}
+
+.mobile-view{
+    display: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .article-footer{
+        margin-top: 0;
+        background-color: #ffffff;
+    }
+    .related-container{
+        display: block;
+    }
+    .related-main-container{
+        width: 90%;
+    }
+    .related-container .related-item{
+        width: 100%;
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: space-between;
+
+    }
+    .related-container .related-item .related-image{
+        width: 100px;
+        height: 100px;
+    }
+    .related-container .related-item .profile-details,.related-tag{
+        display: none;
+    }
+    .related-container .related-item .related-article-heading{
+        display: none;
+    }
+    .line-related{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+        font-family: Open Sans;
+        width: 200px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .mobile-view p:first-of-type{
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .mobile-view p:last-of-type{
+        color: #939393;
+    }
+}

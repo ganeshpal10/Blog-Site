@@ -56,3 +56,32 @@
         font-size: 1.3rem;
     }
 }
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .latest-stories-contianer{
+        width: 89%;
+        margin: 1rem auto 4rem;
+        padding: 0 0 0.1rem;
+    }
+    .latest-stories-list{
+        display: block;
+        padding: 2rem 0 2rem;
+        border-bottom:0 ;
+        margin-bottom: 1.4rem;
+    }
+    .latest-stories-item{
+        width: 100%;
+        padding: 0;
+        border-right: 0;
+    }
+    .latest-stories-item:not(:last-of-type){
+        margin-bottom: 3rem;
+    }
+
+    .latest-stories-item .story-heading{
+        font-weight: 500;
+    }
+    .latest-stories-item .story-para{
+        margin: 2rem 0;
+    }
+}

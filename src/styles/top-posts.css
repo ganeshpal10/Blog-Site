@@ -136,3 +136,15 @@
         font-size: 12px;
     }
 }
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+    .top-posts-container{
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    .post-item-description .post-item-title{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}

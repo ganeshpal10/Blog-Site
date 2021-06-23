@@ -1,0 +1,14 @@
+.tag-container{
+    display: flex;
+    justify-content: left;
+    margin: 1rem 0;
+}
+.tag-container .tag-item{
+    text-align: center;
+    padding:6px;
+    margin-right: 0.9rem;
+    font-size: 15px;
+    font-family: Open Sans;
+    color:#A2A2A2;
+    background-color: #F2F2F2;
+}
