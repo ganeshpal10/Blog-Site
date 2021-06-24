@@ -10,9 +10,9 @@ const App = () =>{
   return(
    <BrowserRouter>
     <ScrollToTop />
-    <Route path = "/" component = {Home} exact></Route>
-    <Route path = "/bollywood" component = {Bollywood} exact></Route>
-    <Route path = "/articlepage" component = {ArticlePage} exact></Route>
+    <Route path = "/Blog" component = {Home} exact></Route>
+    <Route path = "Blog/bollywood" component = {Bollywood} exact></Route>
+    <Route path = "Blog/articlepage" component = {ArticlePage} exact></Route>
    </BrowserRouter>
   )
 }
