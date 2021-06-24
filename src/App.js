@@ -8,11 +8,11 @@ import './App.css'
 
 const App = () =>{
   return(
-   <BrowserRouter>
+   <BrowserRouter basename = "/Blog">
     <ScrollToTop />
-    <Route basename = "/" component = {Home} exact></Route>
-    <Route basename = "/bollywood" component = {Bollywood} exact></Route>
-    <Route basename = "/articlepage" component = {ArticlePage} exact></Route>
+    <Route path = "/" component = {Home} exact></Route>
+    <Route path = "/bollywood" component = {Bollywood} exact></Route>
+    <Route path = "/articlepage" component = {ArticlePage} exact></Route>
    </BrowserRouter>
   )
 }
