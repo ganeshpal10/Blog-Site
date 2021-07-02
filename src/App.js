@@ -8,7 +8,7 @@ import './App.css'
 
 const App = () =>{
   return(
-   <BrowserRouter basename="/Blog">
+   <BrowserRouter>
     <ScrollToTop />
     <Route path = "/" component = {Home} exact></Route>
     <Route path = "/bollywood" component = {Bollywood} exact></Route>

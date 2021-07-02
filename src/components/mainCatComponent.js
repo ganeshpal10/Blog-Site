@@ -1,111 +1,42 @@
 import './../styles/mainCatComponent.css';
-import Articleimage from './../images/article-image.jpg';
-import TopPostsImage from './../images/top-posts1.jpg';
 import HeadingText from './heading-text';
 import SideContianer from './sideContainer';
 import ArticleList from './articleList';
 import LoadButton from './load-button';
+import axios from 'axios';
+import React, {useEffect,useState,useRef} from "react";
 
 const MainCategory =()=>{
-    let ArticleArray = [
-        {
-            id:'1',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'2',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'3',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'4',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'5',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'6',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'7',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            description:"Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-",
-            category:"Travel",
-            date:" / August 21 2017"
-    
+    let componentMounted = useRef(true);
+
+    let [ArticleArray,setArticleArray] = useState([]);
+    let [TopArray,setTopArray] = useState([]);
+
+    useEffect(()=>{
+        axios.get("http://localhost:3001/bollywood").then((response)=>{ 
+        if(componentMounted){
+            let localvariable = response.data;
+            setArticleArray(localvariable);
+            
         }
-    ]
-    let TopArray = [
-        {
-            id:'1',
-            image:`${TopPostsImage}`,
-            title:`Catch waves with an adventure guide`,
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'2',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'3',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-        {
-            id:'4',
-            image:`${Articleimage}`,
-            title:`Catch waves with an adventure guide`,
-            category:"Travel",
-            date:" / August 21 2017"
-    
-        },
-    ]
+    }).catch((err)=>{
+            console.log(err)
+        })
+        axios.get("http://localhost:3001/top-post").then((response)=>{ 
+        if(componentMounted){
+            let localvariable = response.data;
+            setTopArray(localvariable);
+            
+        }
+    }).catch((err)=>{
+            console.log(err)
+        })
+
+        return () => { 
+            componentMounted.current =false;  
+        }
+    },[])
+
     return(
         <div className="main-category-container">
             <div className="category-container">

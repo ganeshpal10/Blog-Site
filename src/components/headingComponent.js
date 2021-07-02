@@ -1,37 +1,36 @@
-import React from 'react';
+import React, { useState,useEffect, useRef } from 'react';
 import './../styles/heading.css';
 import Siren from './siren';
-
+import axios from 'axios';
 
 
 
 const Heading = () =>{
-    let menuItem = [
-        {
-            id:"1",
-            item:"Home"
-        },
-        {
-            id:"2",
-            item:"Bollywood"
-        },
-        {
-            id:"3",
-            item:"Technology"
-        },
-        {
-            id:"4",
-            item:"Hollywood"
-        },
-        {
-            id:"5",
-            item:"Fitness"
-        },
-        {
-            id:"6",
-            item:"Food"
-        },
-    ]
+
+   
+    let componentMounted = useRef(true)
+    let [menuItem,setItem] =useState([]);
+
+    useEffect(()=>{
+        
+        axios.get("http://localhost:3001/menu").then((response)=>{ 
+        if(componentMounted){
+            let localvariable = response.data;
+            setItem(localvariable);
+            
+        }
+        
+      }).catch((err)=>{
+            console.log(err)
+        })
+
+
+        return () => { 
+            componentMounted.current =false;  
+        }
+
+    },[])
+
 
     const openMenu=()=>{
         let a = document.getElementById("Menu");

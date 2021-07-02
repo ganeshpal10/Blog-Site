@@ -1,44 +1,49 @@
 import './../styles/articlefooter.css';
-import latestimg from "./../images/latest.png";
+// import latestimg from "./../images/latest.png";
 import ProfileDetails from './profile';
+import React, {useEffect,useState,useRef} from "react";
+import axios from 'axios';
 
 const ArticleFooter =()=>{
+    let componentMounted = useRef(true);
+    let [ArticleFooterArray,setArticleFooterArray] = useState([]);
+
+    useEffect(()=>{
+        axios.get("http://localhost:3001/articleFooter").then((response)=>{ 
+        if(componentMounted){
+            let localvariable = response.data;
+            setArticleFooterArray(localvariable);
+            
+        }
+    }).catch((err)=>{
+            console.log(err)
+        })
+        return () => { 
+            componentMounted.current =false;  
+        }
+    },[])
+
+    
     return(
         <div className="article-footer">
             <div className="related-main-container">
                 <p className="more">More From The Siren</p>
                 <hr className="line-related"/> 
                 <div className="related-container">
-                    <div className="related-item">
-                        <p className="related-tag">Also tagged Reactjs</p>
-                        <div className="mobile-view">
-                            <p className="related-heading">Performance Comparsion for 5 Javascript Object iterations</p>
-                            <p className="related-name">Dmitry Nozhenko</p>
-                        </div>
-                        <img src={latestimg} alt="" className="related-image"></img>
-                        <h2 className="related-article-heading">Joshua Tree{'\n'}Overnight Adventure</h2>
-                        <ProfileDetails name="name" />
-                    </div>       
-                    <div className="related-item">
-                        <p className="related-tag">Related reads </p>
-                        <div className="mobile-view">
-                            <p className="related-heading">Performance Comparsion for 5 Javascript Object iterations</p>
-                            <p className="related-name">Dmitry Nozhenko</p>
-                        </div>
-                        <img src={latestimg} alt="" className="related-image"></img>
-                        <h2 className="related-article-heading">Joshua Tree{'\n'}Overnight Adventure</h2>
-                        <ProfileDetails name="name" />
-                    </div>       
-                    <div className="related-item">
-                        <p className="related-tag">Related reads </p>
-                        <div className="mobile-view">
-                            <p className="related-heading">Performance Comparsion for 5 Javascript Object iterations</p>
-                            <p className="related-name">Dmitry Nozhenko</p>
-                        </div>
-                        <img src={latestimg} alt="" className="related-image"></img>
-                        <h2 className="related-article-heading">Joshua Tree{'\n'}Overnight Adventure</h2>
-                        <ProfileDetails name="name" />
-                    </div>   
+                    {ArticleFooterArray.map((item,index)=>{
+                        return(
+                            <div className="related-item" key={item.id}>
+                                <p className="related-tag">{item.relatedTag}</p>
+                                <div className="mobile-view">
+                                    <p className="related-heading">{item.relatedHeading}</p>
+                                    <p className="related-name">{item.relatedName}</p>
+                                </div>
+                                <img src={item.image} alt="" className="related-image"></img>
+                                <h2 className="related-article-heading">{item.relatedArticleHeading}</h2>
+                                <ProfileDetails name={item.profileDetails} />
+                            </div>
+                        )
+                    })}
                 </div>
             </div>    
         </div>

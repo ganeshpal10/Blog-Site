@@ -1,35 +1,32 @@
 import "./../styles/featured.css";
-import bg1 from "./../images/bg1.jpg"
-import bg2 from "./../images/bg2.jpg";
 import React, {useEffect,useState,useRef} from "react";
+import axios from 'axios';
+
 
 let Featured = ()=>{
 
-let titleArray = [
-    {
-        id:"1",
-        title:"Title of vertical gallery",
-        date:"Travel / August 21 2017",
-        image:bg1
-    },
-    {
-        id:"2",
-        title:'The  Sound  cloud\nYou  loved  is  doomed',
-        date:"Travel / August 21 2017",
-        image:bg2
-    },
-    {
-        id:"3",
-        title:'The  Sound  cloud\nYou  loved  is  doomed',
-        date:"Travel / August 21 2017",
-        image:bg2
-    },
-
-]
+   
+let componentMounted = useRef(true)
 const delay = 4000;
-
 const [index,setIndex] = useState(0);
 const timeoutRef =useRef(null);
+let [TitleArray,setArray] =useState([]);
+
+
+useEffect(()=>{
+    axios.get("http://localhost:3001/featured").then((response)=>{ 
+    if(componentMounted){
+        let localvariable = response.data;
+        setArray(localvariable);
+        
+    }
+}).catch((err)=>{
+        console.log(err)
+    })
+    return () => { 
+        componentMounted.current =false;  
+    }
+},[])
 
 function resetTimeout(){
     if(timeoutRef.current)
@@ -62,11 +59,12 @@ if(window.outerWidth >= '320' && window.outerWidth <="720")
     else{
         c = {transform :`translate3d(0,0, 0)`}
     }
+    
     return(
         <>
             <div className="slideshow">
-                <div className = "featured-conatiner" style={c}>
-                    {titleArray.map((item,index)=>{
+                <div className = "featured-conatiner" style={c}> 
+                    {TitleArray.map((item,index)=>{
                         let a;
                        if(index===0){
                         a = "1";
@@ -94,7 +92,7 @@ if(window.outerWidth >= '320' && window.outerWidth <="720")
 
                 </div>
                 <div className="slideshowDots" id="slideshowDots">
-                    {titleArray.map((_,idx)=>(
+                    {TitleArray.map((_,idx)=>(
                         <div
                             key={idx}
                             className={`slideshowDot${index === idx ? " active": ""}`}

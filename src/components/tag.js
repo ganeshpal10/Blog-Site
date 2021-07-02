@@ -1,12 +1,17 @@
 import './../styles/tag.css';
 
-const Tag =()=>{
+const Tag = (props)=>{
+
     return(
+        <>
         <div className="tag-container">
-            <p className="tag-item ">React</p>
-            <p className="tag-item ">Javascript</p>
-            <p className="tag-item ">Animation</p>
+            {props.tag.map((item,index)=>{
+                return(
+                    <p className="tag-item " key={index}>{item}</p>        
+                )
+            })}
         </div>
+        </>
     )
 }
 
