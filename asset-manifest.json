@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Blog-Site/static/css/main.f7f490fa.chunk.css",
+    "main.js": "/Blog-Site/static/js/main.7dd405f7.chunk.js",
+    "main.js.map": "/Blog-Site/static/js/main.7dd405f7.chunk.js.map",
+    "runtime-main.js": "/Blog-Site/static/js/runtime-main.78ee7741.js",
+    "runtime-main.js.map": "/Blog-Site/static/js/runtime-main.78ee7741.js.map",
+    "static/css/2.9506cd91.chunk.css": "/Blog-Site/static/css/2.9506cd91.chunk.css",
+    "static/js/2.ba7ac9de.chunk.js": "/Blog-Site/static/js/2.ba7ac9de.chunk.js",
+    "static/js/2.ba7ac9de.chunk.js.map": "/Blog-Site/static/js/2.ba7ac9de.chunk.js.map",
+    "index.html": "/Blog-Site/index.html",
+    "static/css/2.9506cd91.chunk.css.map": "/Blog-Site/static/css/2.9506cd91.chunk.css.map",
+    "static/css/main.f7f490fa.chunk.css.map": "/Blog-Site/static/css/main.f7f490fa.chunk.css.map",
+    "static/js/2.ba7ac9de.chunk.js.LICENSE.txt": "/Blog-Site/static/js/2.ba7ac9de.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/Blog-Site/static/media/fa-solid-900.efbd5d20.eot",
+    "static/media/mask2.6a3f2e3a.png": "/Blog-Site/static/media/mask2.6a3f2e3a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.78ee7741.js",
+    "static/css/2.9506cd91.chunk.css",
+    "static/js/2.ba7ac9de.chunk.js",
+    "static/css/main.f7f490fa.chunk.css",
+    "static/js/main.7dd405f7.chunk.js"
+  ]
+}
